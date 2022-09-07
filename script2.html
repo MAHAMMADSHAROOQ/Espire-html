@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Our HTML Lesson - with JavaScript </title>
+    </head>
+ 
+    <body>
+<label id="ResultPlate" text="" >Results</label>  <br>
+        <script>
+ 
+            function Welcome()
+            {
+              alert('Welcome Everybody');
+            }
+ 
+   
+    var num1 = 10;
+
+document.write("writing here: " + num1);
+
+
+var num2 = 30;
+
+
+(num1 + num2)
+
+(num2 - num1)
+if (num1 > num2)
+       {
+         document.write("num1 is greater");
+       }
+    else if (num1 < num2)
+       {
+         document.write("num2 is greater");
+       }
+    else
+       {
+         document.write("both are equal");
+       }
+
+    var fName = "";
+
+    var lName = "";
+
+
+document.write(fName + " " + lName);
+
+
+
+var Arrfruits=["apple","mango"];
+    document.getElementById("ResultPlate").innerHTML = "my favorateFruit : " + arrfruits[1];
+
+
+document.write("writing here: " + num1);
+
+
+
+var book = {
+            genre:"scince fiction", 
+            mode:"electronic", 
+            type:"kindle",
+            purchaseMode : function() {
+            return this.mode + " " + this.type + "   " + " Online";    }
+        };
+ 
+        function purchaseModes(objBook) {
+                alert(objBook.purchaseMode());
+            return;
+        }
+
+      </script>
+<button onclick="purchaseModes(book)">Get Purchase Info</button>
+ 
+        <input type="button" id="btnWelcome" name="btnWelcome" value="Welcome" onclick="Welcome()" />
+ 
+    </body>
+</html>
